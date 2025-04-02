@@ -1,0 +1,19 @@
+@use './normalize';
+@use './fonts';
+@use './variables';
+@use './mixins';
+@use './media';
+@use './utils';
+@use './globals';
+
+@use "./blocks/button";
+@use "./blocks/mobile-overlay";
+@use "./blocks/header";
+@use "./blocks/hero";
+@use "./blocks/open-tab";
+@use "./blocks/title";
+@use "./blocks/companies";
+@use "./blocks/all-platform";
+@use "./blocks/price";
+@use "./blocks/footer";
+

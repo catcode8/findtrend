@@ -1,0 +1,86 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.all-platform {
+  background-color: #fafafa;
+  padding-block: 140px;
+
+  @include tablet {
+    padding-block: 100px;
+  }
+
+  @include mobile {
+    padding-block: 80px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 80px;
+
+    @include tablet {
+      gap: 50px;
+    }
+  
+    @include mobile {
+      gap: 32px;
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  overflow: auto;
+  width: calc(100% + (var(--container-padding-x) * 2));
+  padding-inline: var(--container-padding-x);
+  margin-inline: calc(var(--container-padding-x) * -1);
+
+  @include tablet {
+    gap: 20px;
+  }
+
+  @include mobile {
+    gap: 16px;
+  }
+}
+
+.tabs button.active {
+  background-color: var(--color-accent);
+}
+
+.tablinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  aspect-ratio: 1;
+  background: var(--color-white);
+  border-radius: var(--border-radius-small);
+  min-width: 64px;
+  transition: background 200ms ease-in;
+  cursor: pointer;
+
+  @include hover {
+    background: var(--color-black);
+  }
+
+  img {
+    width: 54%;
+  }
+}
+
+.tabcontent {
+  img {
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include mobile {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

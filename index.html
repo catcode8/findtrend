@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Findtrend</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container-large">
+        <a href="#" class="header__logo">
+          <img
+            src="/image/logo.svg"
+            alt="Findtrend"
+            width="170"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-tablet">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">How it work</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Solution</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Features</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__login hidden-tablet">
+          <a href="#" class="header__button button button__transparent">
+            Login
+          </a>
+          <a href="#" class="header__button button button__white"> Register </a>
+        </div>
+        <button
+          class="header__burger-button visible-tablet"
+          type="button"
+          onclick="this.classList.toggle('open'); document.body.querySelector('#mobileOverlay').classList.toggle('open')"
+        >
+          <span class="line"></span>
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__body">
+            <h1 class="h1 hero__title">
+              Minimize your tabs. <br />Find the trends!
+            </h1>
+            <p class="hero__description">
+              Don’t let your computer memories consumes all of those browser
+              tabs. Findtrend let you gathers all of your favorite website into
+              one place.
+            </p>
+            <a href="#" class="hero__button button button__accent"
+              >Get Started 🔥</a
+            >
+          </div>
+          <div class="hero__socmed">
+            <div class="hero__socmed__container socmed rotate-minus">
+              <div class="hero__socmed__body">
+                <img
+                  src="/image/socmed/twitter.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <div class="hero__socmed__text">Cryptopunk - Search</div>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="white"
+              >
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(0.707101 -0.707112 0.707101 0.707112 0.29364 1.86133)"
+                  fill="white"
+                />
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(-0.707101 -0.707112 -0.707101 0.707112 16.1648 1.86157)"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="hero__socmed__container socmed rotate-plus">
+              <div class="hero__socmed__body">
+                <img
+                  src="/image/socmed/pinterest.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <div class="hero__socmed__text">Popular Design - Search</div>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="white"
+              >
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(0.707101 -0.707112 0.707101 0.707112 0.29364 1.86133)"
+                  fill="white"
+                />
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(-0.707101 -0.707112 -0.707101 0.707112 16.1648 1.86157)"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="hero__socmed__container socmed rotate-minus">
+              <div class="hero__socmed__body">
+                <img
+                  src="/image/socmed/facebook.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <div class="hero__socmed__text">Product Design - Search</div>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="white"
+              >
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(0.707101 -0.707112 0.707101 0.707112 0.29364 1.86133)"
+                  fill="white"
+                />
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(-0.707101 -0.707112 -0.707101 0.707112 16.1648 1.86157)"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="hero__socmed__container socmed rotate-plus">
+              <div class="hero__socmed__body">
+                <img
+                  src="/image/socmed/dribble.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <div class="hero__socmed__text">Elon Musk - Search</div>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="white"
+              >
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(0.707101 -0.707112 0.707101 0.707112 0.29364 1.86133)"
+                  fill="white"
+                />
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(-0.707101 -0.707112 -0.707101 0.707112 16.1648 1.86157)"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="open-tab">
+        <div class="open-tab__body container">
+          <h2 class="h1 open__title">Open new tabs is sh*t</h2>
+          <div class="open-tab__socmed">
+            <div class="hero__socmed__container">
+              <div class="hero__socmed__body">
+                <img
+                  src="/icons/flesh.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                />
+                <div class="hero__socmed__text">Findtrend - Elon Musk</div>
+              </div>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="white"
+              >
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(0.707101 -0.707112 0.707101 0.707112 0.29364 1.86133)"
+                  fill="white"
+                />
+                <rect
+                  width="2.64056"
+                  height="19.8042"
+                  rx="0.66129"
+                  transform="matrix(-0.707101 -0.707112 -0.707101 0.707112 16.1648 1.86157)"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="open-tab__description">
+            A solution for your browser tabs and don’t make your device get
+            slower over time. Get ease and faster to discover a trend with just
+            one tab.
+          </div>
+        </div>
+      </section>
+
+      <section class="title container">
+        <div class="h2 title__body">
+          Findtrend helps you to increase your productivity and reduce your
+          computer's memory load,
+          <span class="h2 title__gray"
+            >an application that can fulfill your daily browsing needs.</span
+          >
+        </div>
+      </section>
+
+      <section class="companies container">
+        <h2 class="h2 companies__title">Findtrend make +1000 Startup grow</h2>
+        <div class="companies__body">
+          <div class="companies__item">
+            <img
+              src="/image/companies/1.png"
+              alt=""
+              width="190"
+              height="40"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/2.png"
+              alt=""
+              width="156"
+              height="40"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/3.png"
+              alt=""
+              width="146"
+              height="44"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/4.png"
+              alt=""
+              width="174"
+              height="24"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/5.png"
+              alt=""
+              width="112"
+              height="44"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/6.png"
+              alt=""
+              width="162"
+              height="36"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/7.png"
+              alt=""
+              width="148"
+              height="32"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/8.png"
+              alt=""
+              width="151"
+              height="44"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/9.png"
+              alt=""
+              width="182"
+              height="40"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/10.png"
+              alt=""
+              width="164"
+              height="48"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/11.png"
+              alt=""
+              width="174"
+              height="42"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/12.png"
+              alt=""
+              width="160"
+              height="28"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/13.png"
+              alt=""
+              width="176"
+              height="28"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/14.png"
+              alt=""
+              width="178"
+              height="34"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/15.png"
+              alt=""
+              width="162"
+              height="40"
+              loading="lazy"
+            />
+          </div>
+          <div class="companies__item">
+            <img
+              src="/image/companies/16.png"
+              alt=""
+              width="190"
+              height="34"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="all-platform">
+        <div class="all-platform__body container">
+          <div class="all-platform__title h2">
+            All platform connect to Findtrend
+          </div>
+          <div class="tabs">
+            <button class="tablinks" onclick="openSocmed(event, 'Facebook')">
+              <img
+                src="/image/all-platform/1.png"
+                alt="Facebook"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button
+              class="tablinks"
+              onclick="openSocmed(event, 'X')"
+              id="defaultOpen"
+            >
+              <img
+                src="/image/all-platform/2.png"
+                alt="X"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'Dribbble')">
+              <img
+                src="/image/all-platform/3.png"
+                alt="Dribbble"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'Pinterest')">
+              <img
+                src="/image/all-platform/4.png"
+                alt="Pinterest"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'Medium')">
+              <img
+                src="/image/all-platform/5.png"
+                alt="Medium"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'Reddit')">
+              <img
+                src="/image/all-platform/6.png"
+                alt="Reddit"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'VK')">
+              <img
+                src="/image/all-platform/7.png"
+                alt="VK"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+            <button class="tablinks" onclick="openSocmed(event, 'LinkedIn')">
+              <img
+                src="/image/all-platform/8.png"
+                alt="LinkedIn"
+                width="60"
+                height="60"
+                loading="lazy"
+              />
+            </button>
+          </div>
+          <div id="Facebook" class="tabcontent">
+            <img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="X" class="tabcontent">
+            <img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="Dribbble" class="tabcontent">
+            <img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="Pinterest" class="tabcontent">
+            <img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="Medium" class="tabcontent">
+            <img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="Reddit" class="tabcontent">
+            <img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="VK" class="tabcontent">
+            <img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div id="LinkedIn" class="tabcontent">
+            <img
+              src="/image/all-platform/post2.png"
+              alt="post"
+              width="800"
+              height="804"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post1.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            /><img
+              src="/image/all-platform/post3.png"
+              alt="post"
+              width="800"
+              height="274"
+              loading="lazy"
+            />
+          </div>
+          <div class="">
+            <a href="#" class="all-platform__link button button__black-accent"
+              >View More Trend</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="pricelist" class="price">
+        <div class="price__body container">
+          <h2 class="price__title h2">Get your best deal</h2>
+          <div class="price__switch">
+            <div class="price__month">Monthly</div>
+            <label class="switch">
+              <input
+                type="checkbox"
+                onchange="document.body.querySelector('#pricelist').classList.toggle('yearly')"
+              />
+              <span class="slider round"></span>
+            </label>
+            <div class="price__year">Yearly</div>
+            <div class="price__decor">Save 10%<br />per month</div>
+          </div>
+          <div class="price-cards">
+            <div class="price-card">
+              <h3 class="h3 price-card__title">Personal</h3>
+              <div class="price-card__description">
+                Special first packet for all
+              </div>
+              <div class="price-card__price">
+                <div class="month">
+                  $8
+                  <span>/Month</span>
+                </div>
+                <div class="year">
+                  $87
+                  <span>/Year</span>
+                </div>
+              </div>
+              <ul class="price-card__list">
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Up to 5 page each group
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Up to 10 group page
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  5 Days group page saved
+                </li>
+              </ul>
+              <a href="#" class="price-card__button button button__accent-t2"
+                >Start Free Trial</a
+              >
+            </div>
+            <div class="price-card accent">
+              <h3 class="h3 price-card__title">Regular</h3>
+              <div class="price-card__description">
+                Recommended for personal pro
+              </div>
+              <div class="price-card__price">
+                <div class="month">
+                  $20
+                  <span>/Month</span>
+                </div>
+                <div class="year">
+                  $216
+                  <span>/Year</span>
+                </div>
+              </div>
+              <ul class="price-card__list">
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Up to 15 page each group
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Download page up to 20 page
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Up to 10 group page
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  15 Days group page saved
+                </li>
+              </ul>
+              <a href="#" class="price-card__button button button__black"
+                >Start Free Trial</a
+              >
+            </div>
+            <div class="price-card">
+              <h3 class="h3 price-card__title">Premium</h3>
+              <div class="price-card__description">
+                Packet for Startup & Company
+              </div>
+              <div class="price-card__price">
+                <div class="month">
+                  $48
+                  <span>/Month</span>
+                </div>
+                <div class="year">
+                  $519
+                  <span>/Year</span>
+                </div>
+              </div>
+              <ul class="price-card__list">
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Unlimited group pages
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Unlimited download page
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Unlimited page each group
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Customize sorting group pages
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Customize group page name
+                </li>
+                <li class="price-card__link">
+                  <svg
+                    width="14"
+                    height="10"
+                    viewBox="0 0 14 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M13.6946 0.931356C14.1467 1.45305 14.0904 2.2425 13.5687 2.69463L6.06866 9.19463C5.57308 9.62413 4.82984 9.59762 4.36612 9.1339L0.366117 5.1339C-0.122039 4.64575 -0.122039 3.85429 0.366117 3.36614C0.854272 2.87798 1.64573 2.87798 2.13388 3.36614L5.31088 6.54314L11.9313 0.805408C12.453 0.353273 13.2425 0.409662 13.6946 0.931356Z"
+                      fill="black"
+                    />
+                  </svg>
+                  30 Days group page saved
+                </li>
+              </ul>
+              <a href="#" class="price-card__button button button__accent-t2"
+                >Start Free Trial</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="title title-accent">
+        <div class="container">
+          <div class="h2 title__body title-accent__body">
+            Join us on email for <br />
+            <span class="h2 title-accent__gray">more trending topics</span>
+          </div>
+          <div class="">
+            <a href="#" class="button button__black" target="_blank"
+              >Join Now</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container-large">
+      <div class="footer__logo">
+        <a href="#" class="logo">
+          <img
+            src="/image/logo-black.svg"
+            alt=""
+            class=""
+            width="170"
+            height="40"
+          />
+        </a>
+      </div>
+      <nav class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms and Conditions</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Contact Us</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Careers</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+      <ul class="mobile-overlay__list visible-tablet">
+        <li class="mobile-overlay__item">
+          <a href="/" class="mobile-overlay__link">About</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="/" class="mobile-overlay__link">How it work</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="/" class="mobile-overlay__link">Pricing</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="/" class="mobile-overlay__link">Solution</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="/" class="mobile-overlay__link">Features</a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="header__button button button__transparent">
+            Login
+          </a>
+        </li>
+        <li class="mobile-overlay__item">
+          <a href="#" class="header__button button button__white"> Register </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="/js/tabs.js"></script>
+  </body>
+</html>

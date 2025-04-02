@@ -1,0 +1,82 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 32px;
+  border-radius: var(--border-radius-large);
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 1;
+  transition:  200ms ease-in;
+  transition-property: background, color;
+  cursor: pointer;
+  gap: 50px;
+  height: 57px;
+
+  &__black {
+    color: var(--color-white);
+    background: var(--color-black);
+
+    @include hover {
+      color: var(--color-black);
+      background: var(--color-white);
+    }
+  }
+
+  &__black-accent {
+    color: var(--color-white);
+    background: var(--color-black);
+
+    @include hover {
+      color: var(--color-black);
+      background: var(--color-accent);
+    }
+  }
+
+  &__transparent,
+  &__white {
+    height: 42px;
+    font-weight: 400;
+  }
+
+  &__transparent {
+    color: var(--color-white);
+    background: transparent;
+    padding-inline: 0;
+
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__white {
+    color: var(--color-black);
+    background: var(--color-white);
+
+    @include hover {
+      color: var(--color-black);
+      background: var(--color-accent);
+    }
+  }
+
+  &__accent {
+    color: var(--color-black);
+    background: var(--color-accent);
+
+    @include hover {
+      background: var(--color-white);
+    }
+  }
+
+  &__accent-t2 {
+    color: var(--color-black);
+    background: var(--color-accent);
+
+    @include hover {
+      color: var(--color-white);
+      background: var(--color-black);
+    }
+  }
+}

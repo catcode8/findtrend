@@ -1,0 +1,38 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 30px;
+  
+
+  @include mobile {
+    flex-direction: column;
+    padding-block: 80px;
+    gap: 80px;
+  }
+
+  &__list {
+    display: flex; 
+    gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    transition: color 200ms ease-in;
+    flex-shrink: 1;
+    text-decoration: none;
+
+    @include hover {
+      text-decoration-line:underline;
+      text-decoration-color: var(--color-black);
+      
+    }
+  }
+}

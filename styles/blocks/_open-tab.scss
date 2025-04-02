@@ -1,0 +1,105 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.open-tab {
+  background: var(--color-accent);
+
+  &__body {
+    padding-block: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+
+    @include tablet {
+      gap: 40px;
+      padding-block: 110px;
+    }
+
+    @include mobile {
+      gap: 80px;
+      padding-block: 80px;
+    }
+
+    @include mobile-s {
+      gap: 30px;
+    }
+  }
+
+  &__socmed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    border-radius: var(--border-radius);
+
+    @include tablet {
+      width: 400px;
+      height: 160px;
+    }
+
+    @include mobile {
+      width: 340px;
+      height: 118px;
+    }
+
+    @include mobile-s {
+      width: 312px;
+      height: 100px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: -115px;
+      top: 40%;
+      background: url("/image/open__text-1.svg") no-repeat;
+      width: 95px;
+      height: 73px;
+
+      @include mobile {
+        left: -10px;
+        top: 90%;
+        background: url("/image/open__text-1__2.svg") no-repeat;
+      }
+
+      @include mobile-s {
+        display: none;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: -115px;
+      top: 40%;
+      background: url("/image/open__text-2.svg") no-repeat;
+      width: 95px;
+      height: 73px;
+
+      @include mobile {
+        right: 20px;
+        top: -40%;
+        background: url("/image/open__text-2__2.svg") no-repeat;
+      }
+
+      @include mobile-s {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    width: 650px;
+    text-align: center;
+    font-size: 18px;
+
+    @include mobile {
+      width: 286px;
+    }
+  }
+}

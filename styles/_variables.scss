@@ -1,0 +1,21 @@
+@use "./media" as *;
+@use "./mixins" as *;
+
+:root {
+  --color-accent: #A8FF35;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --border-radius: 16px;
+  --border-radius-small: 8px;
+  --border-radius-large: 40px;
+
+  --font-family-base: 'Effra', sans-serif;
+
+  --container-width: 1244px;
+  --container-width-small: 1160px;
+  --container-padding-x: 18px;
+
+  --button-height: 58px;
+  --button-height-mobile: 44px;
+}

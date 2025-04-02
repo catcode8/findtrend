@@ -1,0 +1,267 @@
+@use "../media" as *;
+@use "../mixins" as *;
+
+.price {
+  background: var(--color-black);
+  padding-block: 140px;
+
+  @include tablet {
+    padding-block: 110px;
+  }
+
+  @include mobile {
+    padding-block: 80px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include tablet {
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__switch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 24px;
+    font-family: "Inter";
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: 187px;
+    font-family: "GoodDog";
+    font-size: 14px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.5px;
+
+    @include tablet {
+      top: 76px;
+      left: 50%;
+      margin-left: 63px;
+      transform: rotate(6deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: -18px;
+      background: url("/icons/Arrow-price.svg") 50% / contain no-repeat;
+      width: 29px;
+      height: 35px;
+      transform: rotate(-250deg);
+
+      @include tablet {
+        top: -34px;
+        left: -4px;
+        transform: rotate(-265deg) scaleX(-1);
+      }
+    }
+  }
+
+  &__month,
+  &__year {
+    transition: opacity 400ms ease-in;
+  }
+
+  &__month {
+    .yearly & {
+      opacity: 0.5;
+    }
+  }
+
+  &__year {
+    opacity: 0.5;
+
+    .yearly & {
+      opacity: 1;
+    }
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 104px;
+  height: 52px;
+
+  @include tablet {
+    height: 44px;
+  }
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  left: 8px;
+  bottom: 8px;
+  background-color: var(--color-accent);
+  transition: 0.4s;
+
+  @include tablet {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-accent);
+}
+
+input:checked + .slider:before {
+  transform: translateX(52px);
+
+  @include tablet {
+    transform: translateX(60px);
+  }
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.price-cards {
+  display: grid;
+  gap: 40px;
+
+  @include tablet-above {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include tablet {
+    margin-top: 48px;
+    gap: 24px;
+  }
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  min-height: 602px;
+
+  &.accent {
+    background: var(--color-accent);
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font-size: 18px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #c8c8c8;
+
+    @include tablet {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__price {
+    @include fluid-text(64, 60);
+    font-weight: 500;
+    line-height: 1;
+    margin-block: 32px;
+    position: relative;
+    overflow: hidden;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    .month,
+    .year {
+      transition: transform 400ms ease-in-out;
+
+      .yearly & {
+        transform: translateY(-100%);
+      }
+    }
+
+    .year {
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+    flex-grow: 1;
+
+    @include tablet {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 13px;
+    font-size: 18px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
